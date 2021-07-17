@@ -1,3 +1,23 @@
+def evaluacion(numero):
+    contador = 0
+    rango = 2
+
+    if numero == 1:
+        return False
+
+    else:
+        while rango < numero and contador == 0:
+
+            if numero % rango == 0:
+                contador += 1
+                
+            rango += 1
+        if contador == 0:
+            return True
+        else:
+            return False
+
+
 def run ():
     bandera = 0
 
